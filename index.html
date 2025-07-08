@@ -14,19 +14,21 @@
 	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- Leaflet CSS for OpenStreetMap -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/header.css">
 </head>
 
 <body>
+
 
 	<!--================ Header Area =================-->
 	<header class="header_area">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container-fluid mx-2">
-					<a class="navbar-brand logo_h" href="index.html"></a>
+					<a class="navbar-brand logo_h" href=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
@@ -35,16 +37,16 @@
 						<span class="icon-bar"></span>
 					</button>
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<a href="" style="display: block;"><img src="img/logo.png" alt=""></a>
+						<a href="index.html" style="display: block;"><img src="img/logo.png" alt=""></a>
 						<ul class="nav navbar-nav menu_nav justify-content-sm-end">
 							<li class="nav-item active submenu dropdown"><a class="nav-link" href=""></a>
 								<a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown"
 									role="button" aria-haspopup="true" aria-expanded="false">Accueil</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="nos_services.html">1. Nos
+									<li class="nav-item"><a class="nav-link" href="services.html">1. Nos
 											services</a></li>
 									<li class="nav-item"><a class="nav-link" href="diaporama.html">2. Diaporama
-									<li class="nav-item"><a class="nav-link" href="nos_actualites.html">3. Nos
+									<li class="nav-item"><a class="nav-link" href="actualites.html">3. Nos
 											actualités</a></li>
 								</ul>
 							</li>
@@ -54,7 +56,7 @@
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="missions_methode_valeurs.html">1. Nos
 											missions, notre méthode, nos valeurs</a></li>
-									<li class="nav-item"><a class="nav-link" href="notre_équipe.html">2. Notre équipe
+									<li class="nav-item"><a class="nav-link" href="equipe.html">2. Notre équipe
 									<li class="nav-item"><a class="nav-link" href="le_conseil_administration.html">3. Le
 											conseil d'administration
 									<li class="nav-item"><a class="nav-link" href="subside_adhesion.html">4. Subside et
@@ -67,18 +69,18 @@
 								<a href="accompagnement.html" class="nav-link dropdown-toggle" data-toggle="dropdown"
 									role="button" aria-haspopup="true" aria-expanded="false">Accompagnement</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.html">1. Accompagnement
+									<li class="nav-item"><a class="nav-link" href="accompagnement_individuel.html">1. Accompagnement
 											individuel</a></li>
-									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">2.
+									<li class="nav-item"><a class="nav-link" href="accompagnement_social.html">2.
 											Accompagnement social
-									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">3. Espace
+									<li class="nav-item"><a class="nav-link" href="espace_public.html">3. Espace
 											public numérique</a></li>
 								</ul>
 							</li>
 							<li class="nav-item"><a class="nav-link" href="orientation.html">Orientation</a></li>
 							<li class="nav-item"><a class="nav-link" href="agenda_formations.html">Agenda formations</a>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="offres_offres.html">Nos offres d'emploi</a>
+							<li class="nav-item"><a class="nav-link" href="offres_emploi.html">Nos offres d'emploi</a>
 							</li>
 							<li class="nav-item"><a class="nav-link" href="biotiful.html">Biotiful</a></li>
 							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -90,6 +92,7 @@
 
 		</div>
 	</header>
+	<!--================ End Header Area =================-->
 
 	<!--================ Home Banner Area =================-->
 	<section class="home_banner_area">
@@ -116,8 +119,10 @@
 			</div>
 		</div>
 	</section>
+
+
 	<!--================ Features Area =================-->
-	<section class="features_area">
+	<section class="features_area" id="actualites">
 		<div class="container">
 			<div class="row justify-content-center ">
 				<div class="col-lg-8 text-center">
@@ -168,6 +173,8 @@
 			</div>
 		</div>
 	</section>
+
+	<!--================ Features Area 2 =================-->
 	<section class="features_area">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -782,8 +789,14 @@
 	<script src="js/mail-script.js"></script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+
 	<script src="js/gmaps.min.js"></script>
+
 	<script src="js/theme.js"></script>
+
+
+
+
 </body>
 
 </html>

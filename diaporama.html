@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Services</title>
+	<title>Satner Portfolio</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- Leaflet CSS for OpenStreetMap -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -90,30 +92,158 @@
 		</div>
 	</header>
 	<!--================ End Header Area =================-->
-    
-    <!--================ Start Banner Area =================-->
+
     <section class="banner_area">
         <div class="banner_inner d-flex align-items-center">
             <div class="container">
                 <div class="banner_content text-center">
-                    <h2>Services</h2>
+                    <h2>Diaporama</h2>
                     <div class="page_link">
                         <a href="index.html">Accueil</a>
-                        <a href="services.html">Services</a>
+                        <a href="diaporama.html">Diaporama</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--================ End Banner Area =================-->
-    
-    
-    <!--================ Service Area =================-->
-    <!-- .... -->
-    <!--================ End Service Area =================-->
-    
 
-        
+	<!--================ Diaporama =================-->
+	<div class="testimonial_area section_gap_bottom mt-5 p-0" id="diaporama">
+		<div class="container">
+
+			<div class="row">
+				<div class="testi_slider owl-carousel">
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="img/testimonials/t1.jpg" alt="">
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Batiment</h4>
+									<p>Forme-toi aux métiers du bâtiment : maçonnerie, peinture, rénovation. Apprends un
+										savoir-faire solide et recherché</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="img/testimonials/t2.jpg" alt="">
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Aide</h4>
+									<p>Une formation utile et humaine : deviens aide ménagère, soutiens le quotidien et
+										accède à un emploi stable et valorisant </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="img/testimonials/t3.jpg" alt="">
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Digital</h4>
+									<p>Plonge dans le numérique : site web, design, réseaux sociaux... Une formation
+										pour booster ta carrière digitale</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div class="col-lg-4">
+								<img src="img/testimonials/t4.jpg" alt="">
+							</div>
+							<div class="col-lg-8">
+								<div class="testi_text">
+									<h4>Horeca</h4>
+									<p>Découvre notre formation Horeca : cuisine, salle et accueil client. Mets le pied
+										dans un secteur vivant et plein d’opportunités !</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--================ Contact Area =================-->
+	<section class="contact_area section_gap">
+		<div class="main_title mt-5">
+			<h2>Contact</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="contact_info">
+						<div class="info_item">
+							<i class="lnr lnr-home"></i>
+							<h6>Bruxelles, Belgique</h6>
+							<p>Chau. de Waterloo 255, 1060 Saint-Gilles</p>
+						</div>
+						<div class="info_item">
+							<i class="lnr lnr-phone-handset"></i>
+							<h6><a href="#">02 542 63 21</a></h6>
+							<p>08:30-12:00 / 13:00-16:00</p>
+						</div>
+						<div class="info_item">
+							<i class="lnr lnr-envelope"></i>
+							<h6><a href="#">info@mlsg.be</a></h6>
+							<p>Envoyez-nous votre demande quand vous le souhaitez !</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
+						novalidate="novalidate">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name"
+									placeholder="Entrez votre prénom">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="firstName" name="firstName"
+									placeholder="Entrez votre nom">
+							</div>
+
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" name="email"
+									placeholder="Entrez votre mail">
+							</div>
+							<div class="form-group">
+								<input type="number" class="form-control" id="postCode" name="postCode"
+									placeholder="Entrez votre code postal">
+							</div>
+							<div class="form-group">
+								<input type="number" class="form-control" id="phone" name="phone"
+									placeholder="Entrez votre téléphone">
+							</div>
+						</div>
+
+						<div class="col-md-6 text-right d-flex justify-content-center align-items-center">
+							<button type="submit" value="submit" class="primary_btn">
+								<span>Envoyez</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!--================ END Contact Area =================-->
+
+
 	<!--================Footer Area =================-->
 	<footer class="footer_area border border-top border-dark">
 		<div class="container py-4">
@@ -162,26 +292,33 @@
 
 		</div>
 	</footer>
-	<!--================ End Footer Area =================-->
 
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="vendors/isotope/isotope-min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
-    <script src="js/theme.js"></script>
+
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+
+	<script src="js/gmaps.min.js"></script>
+
+	<script src="js/theme.js"></script>
+
+
+
+
 </body>
 
 </html>

@@ -14,3 +14,9 @@
 ### Test UI-UX TOUS
 
 ### site exemple -> https://mlsg.be/
+
+
+
+# Nouvelles
+
+### Toutes les pages sont prêtes, elles contiennent la bande titre un newsletter un contact et le footer, a vous de remplir des page manquantes avec ce qu'ils faut

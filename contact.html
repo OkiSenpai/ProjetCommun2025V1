@@ -1,359 +1,247 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <title>Contactez-nous</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="vendors/linericon/style.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-    <!-- Leaflet CSS for OpenStreetMap -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .contact_banner {
-        position: relative;
-        overflow: hidden;
-        width: 67%;
-        min-height: 485px;
-        background: rgba(0, 0, 0, 0.7) url(../img/banner/contactBanner.jpg)
-          no-repeat right bottom;
-        background-size: 100% 90%;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-      }
-      .contact_banner_content {
-        width: 100%;
-        margin: 0 auto;
-        padding: 80px 0;
-        text-align: center;
-        color: white;
-      }
-      .contact_banner_content h2 {
-        color: #fff;
-        font-size: 3rem;
-        margin: 0;
-        font-weight: 400;
-        letter-spacing: 2px;
-      }
-    </style>
-  </head>
 
-  <body>
-    <!--================ Start Header Area =================-->
-    <header class="header_area">
-      <div class="main_menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid mx-2">
-            <a class="navbar-brand logo_h" href="index.html"></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse offset"
-              id="navbarSupportedContent"
-            >
-              <a href="" style="display: block"
-                ><img src="img/logo.png" alt=""
-              /></a>
-              <ul class="nav navbar-nav menu_nav justify-content-sm-end">
-                <li class="nav-item active submenu dropdown">
-                  <a class="nav-link" href=""></a>
-                  <a
-                    href="index.html"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Accueil</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="nos_services.html"
-                        >1. Nos services</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="diaporama.html">2. Diaporama</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="nos_actualites.html"
-                        >3. Nos actualités</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a class="nav-link" href=""></a>
-                  <a
-                    href="qui_sommes_nous.html"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Qui sommes-nous ?</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="missions_methode_valeurs.html"
-                        >1. Nos missions, notre méthode, nos valeurs</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="notre_équipe.html"
-                        >2. Notre équipe</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="le_conseil_administration.html"
-                        >3. Le conseil d'administration</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="subside_adhesion.html"
-                        >4. Subside et adhésion</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="rapports_activite.html"
-                        >5. Rapports d'activité, statuts, comptes annuels</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item submenu dropdown">
-                  <a class="nav-link" href=""></a>
-                  <a
-                    href="accompagnement.html"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Accompagnement</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="elements.html"
-                        >Accompagnement individuel</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="portfolio-details.html"
-                        >Accompagnement social</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="portfolio-details.html"
-                        >3. Espace public numérique</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="orientation.html">Orientation</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="agenda_formations.html"
-                    >Agenda formations</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="offres_offres.html"
-                    >Nos offres d'offres</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="biotiful.html">Biotiful</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <title>Contactez-nous</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="vendors/linericon/style.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+  <!-- Leaflet CSS for OpenStreetMap -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<!--================ Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid mx-2">
+					<a class="navbar-brand logo_h" href=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<a href="index.html" style="display: block;"><img src="img/logo.png" alt=""></a>
+						<ul class="nav navbar-nav menu_nav justify-content-sm-end">
+							<li class="nav-item active submenu dropdown"><a class="nav-link" href=""></a>
+								<a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown"
+									role="button" aria-haspopup="true" aria-expanded="false">Accueil</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="services.html">1. Nos
+											services</a></li>
+									<li class="nav-item"><a class="nav-link" href="diaporama.html">2. Diaporama
+									<li class="nav-item"><a class="nav-link" href="actualites.html">3. Nos
+											actualités</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown"><a class="nav-link" href=""></a>
+								<a href="qui_sommes_nous.html" class="nav-link dropdown-toggle" data-toggle="dropdown"
+									role="button" aria-haspopup="true" aria-expanded="false">Qui sommes-nous ?</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="missions_methode_valeurs.html">1. Nos
+											missions, notre méthode, nos valeurs</a></li>
+									<li class="nav-item"><a class="nav-link" href="equipe.html">2. Notre équipe
+									<li class="nav-item"><a class="nav-link" href="le_conseil_administration.html">3. Le
+											conseil d'administration
+									<li class="nav-item"><a class="nav-link" href="subside_adhesion.html">4. Subside et
+											adhésion
+									<li class="nav-item"><a class="nav-link" href="rapports_activite.html">5. Rapports
+											d'activité, statuts, comptes annuels</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown"><a class="nav-link" href=""></a>
+								<a href="accompagnement.html" class="nav-link dropdown-toggle" data-toggle="dropdown"
+									role="button" aria-haspopup="true" aria-expanded="false">Accompagnement</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="accompagnement_individuel.html">1. Accompagnement
+											individuel</a></li>
+									<li class="nav-item"><a class="nav-link" href="accompagnement_social.html">2.
+											Accompagnement social
+									<li class="nav-item"><a class="nav-link" href="espace_public.html">3. Espace
+											public numérique</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="orientation.html">Orientation</a></li>
+							<li class="nav-item"><a class="nav-link" href="agenda_formations.html">Agenda formations</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="offres_emploi.html">Nos offres d'emploi</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="biotiful.html">Biotiful</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+  <!--================ Start Banner Area =================-->
+  <section class="contact_banner">
+    <div class="contact_banner_content mt-5">
+      <h2>Contactez-nous</h2>
+    </div>
+  </section>
+  <!--================ End Banner Area =================-->
+
+  <!--================Contact Area =================-->
+  <section class="contact_area section_gap">
+    <div class="main_title mt-5">
+      <h2>Contact</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="contact_info">
+            <div class="info_item">
+              <i class="lnr lnr-home"></i>
+              <h6>Bruxelles, Belgique</h6>
+              <p>Chau. de Waterloo 255, 1060 Saint-Gilles</p>
+            </div>
+            <div class="info_item">
+              <i class="lnr lnr-phone-handset"></i>
+              <h6><a href="#">02 542 63 21</a></h6>
+              <p>08:30-12:00 / 13:00-16:00</p>
+            </div>
+            <div class="info_item">
+              <i class="lnr lnr-envelope"></i>
+              <h6><a href="#">info@mlsg.be</a></h6>
+              <p>Envoyez-nous votre demande quand vous le souhaitez !</p>
             </div>
           </div>
-        </nav>
+        </div>
+        <div class="col-lg-9">
+          <form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
+            novalidate="novalidate">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Entrez votre prénom">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Entrez votre nom">
+              </div>
+
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Entrez votre mail">
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" id="postCode" name="postCode"
+                  placeholder="Entrez votre code postal">
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" id="phone" name="phone" placeholder="Entrez votre téléphone">
+              </div>
+            </div>
+
+            <div class="col-md-6 text-right d-flex justify-content-center align-items-center">
+              <button type="submit" value="submit" class="primary_btn">
+                <span>Envoyez</span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    </header>
-    <!--================ End Header Area =================-->
 
-    <!--================ Start Banner Area =================-->
-    <section class="contact_banner">
-      <div class="contact_banner_content">
-        <h2>Contactez-nous</h2>
+    </div>
+  </section>
+  <!--================Contact Area =================-->
+
+  <!--================Footer Area =================-->
+  <footer class="footer_area border border-top border-dark">
+    <div class="container py-4">
+
+      <!-- Ligne du haut : Réseaux à gauche, carte à droite -->
+      <div class="row mb-5">
+
+        <!-- Bloc "Suivez-nous" à gauche -->
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="footer_logo mb-3">
+            <a href="#"><img src="img/logo.png" alt="logo" style="max-width: 100px;"></a>
+            <h4>Suivez-nous</h4>
+          </div>
+          <div class="footer_social mb-2">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <div class="contact_info">
+            <p>Téléphone : 0000000000</p>
+            <p>Email : Mail@mail.com</p>
+          </div>
+        </div>
+
+        <!-- Carte à droite alignée avec le haut du bloc gauche -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center ">
+          <div id="mapBox" class="mapBox mb-5" data-lat="50.823850" data-lon="4.345610" data-zoom="15"
+            data-info="Chau. de Waterloo 255, 1060 Saint-Gilles, Belgique" data-mlat="50.823850" data-mlon="4.345610"
+            style="width: 100%; max-width: 450px; height: 350px;">
+          </div>
+        </div>
+
       </div>
-    </section>
-    <!--================ End Banner Area =================-->
 
-    <!--================Contact Area =================-->
-	<section class="contact_area section_gap">
-		<div class="main_title mt-5">
-			<h2>Contact</h2>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="contact_info">
-						<div class="info_item">
-							<i class="lnr lnr-home"></i>
-							<h6>Bruxelles, Belgique</h6>
-							<p>Chau. de Waterloo 255, 1060 Saint-Gilles</p>
-						</div>
-						<div class="info_item">
-							<i class="lnr lnr-phone-handset"></i>
-							<h6><a href="#">02 542 63 21</a></h6>
-							<p>08:30-12:00 / 13:00-16:00</p>
-						</div>
-						<div class="info_item">
-							<i class="lnr lnr-envelope"></i>
-							<h6><a href="#">info@mlsg.be</a></h6>
-							<p>Envoyez-nous votre demande quand vous le souhaitez !</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-9">
-					<form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
-						novalidate="novalidate">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name"
-									placeholder="Entrez votre prénom">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="firstName" name="firstName"
-									placeholder="Entrez votre nom">
-							</div>
+      <!-- Ligne du bas : Copyright -->
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <p class="footer-text m-0">
+            &copy;
+            <script>document.write(new Date().getFullYear());</script> Tous droits réservés |
+            Cette template a été créée par
+            <a href="https://colorlib.com" target="_blank">Agim, Massine & Omer</a>
+          </p>
+        </div>
+      </div>
 
-							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="email"
-									placeholder="Entrez votre mail">
-							</div>
-							<div class="form-group">
-								<input type="number" class="form-control" id="postCode" name="postCode"
-									placeholder="Entrez votre code postal">
-							</div>
-							<div class="form-group">
-								<input type="number" class="form-control" id="phone" name="phone"
-									placeholder="Entrez votre téléphone">
-							</div>
-						</div>
+    </div>
+  </footer>
+  <!--================End Footer Area =================-->
 
-						<div class="col-md-6 text-right d-flex justify-content-center align-items-center">
-							<button type="submit" value="submit" class="primary_btn">
-								<span>Envoyez</span>
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+  <script src="vendors/isotope/isotope-min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <!-- Leaflet JS for OpenStreetMap -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    var map = L.map("mapBox").setView([50.8267, 4.3571], 15);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+    L.marker([50.8267, 4.3571])
+      .addTo(map)
+      .bindPopup(
+        "Chaussée de Waterloo, 255 (2e étage) - 1060 Saint-Gilles, Bruxelles, Belgique"
+      )
+      .openPopup();
+  </script>
+  <script src="js/theme.js"></script>
+</body>
 
-		</div>
-	</section>
-    <!--================Contact Area =================-->
-
-    <!--================Footer Area =================-->
-	<footer class="footer_area border border-top border-dark">
-		<div class="container py-4">
-
-			<!-- Ligne du haut : Réseaux à gauche, carte à droite -->
-			<div class="row mb-5">
-
-				<!-- Bloc "Suivez-nous" à gauche -->
-				<div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-					<div class="footer_logo mb-3">
-						<a href="#"><img src="img/logo.png" alt="logo" style="max-width: 100px;"></a>
-						<h4>Suivez-nous</h4>
-					</div>
-					<div class="footer_social mb-2">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-					</div>
-					<div class="contact_info">
-						<p>Téléphone : 0000000000</p>
-						<p>Email : Mail@mail.com</p>
-					</div>
-				</div>
-
-				<!-- Carte à droite alignée avec le haut du bloc gauche -->
-				<div class="col-md-6 d-flex justify-content-center align-items-center ">
-					<div id="mapBox" class="mapBox mb-5" data-lat="50.823850" data-lon="4.345610" data-zoom="15"
-						data-info="Chau. de Waterloo 255, 1060 Saint-Gilles, Belgique" data-mlat="50.823850"
-						data-mlon="4.345610" style="width: 100%; max-width: 450px; height: 350px;">
-					</div>
-				</div>
-
-			</div>
-
-			<!-- Ligne du bas : Copyright -->
-			<div class="row mt-5">
-				<div class="col-12 text-center">
-					<p class="footer-text m-0">
-						&copy;
-						<script>document.write(new Date().getFullYear());</script> Tous droits réservés |
-						Cette template a été créée par
-						<a href="https://colorlib.com" target="_blank">Agim, Massine & Omer</a>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-    <!--================End Footer Area =================-->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="vendors/isotope/isotope-min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <!-- Leaflet JS for OpenStreetMap -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-      var map = L.map("mapBox").setView([50.8267, 4.3571], 15);
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
-      L.marker([50.8267, 4.3571])
-        .addTo(map)
-        .bindPopup(
-          "Chaussée de Waterloo, 255 (2e étage) - 1060 Saint-Gilles, Bruxelles, Belgique"
-        )
-        .openPopup();
-    </script>
-    <script src="js/theme.js"></script>
-  </body>
 </html>
