@@ -549,6 +549,31 @@ button:focus {
   display: flex;
 }
 
+
+  .horaire-box {
+    background-color: rgb(227, 0, 86);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+
+  .horaire-box.closed {
+    background-color: #888;
+  }
+
+  .horaire-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Home Banner Area css
@@ -3196,6 +3221,10 @@ h6 {
   .features_area {
     padding-bottom: 50px;
   }
+}
+
+.valeur_title{
+  color: rgb(126, 44, 92);
 }
 
 .feature_item {
