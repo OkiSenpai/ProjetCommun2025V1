@@ -1,3 +1,14 @@
-/* #navbarSupportedContent{
-    width: 250vw;
+.dropdown-menu{
+    /* display: flex !important;
+    flex-direction: column;
+    align-items: center; */
+    width: 20vw !important;
+}
+
+nav{
+
+}
+
+/* .dropdown-menu>.nav-item{
+    margin: 0 !important;
 } */

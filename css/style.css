@@ -286,10 +286,10 @@ button:focus {
   width: 100%;
 }
 .header_area .navbar .nav .nav-item {
-  margin-right: 17px !important;
+  margin-right: 17px;
 }
 .header_area .navbar .nav .nav-item .nav-link {
-  font: 500 11px/100px "Rubik", sans-serif;
+  font: 500 11.5px/100px "Rubik", sans-serif;
   text-transform: uppercase;
   color: #000000;
   padding: 0px;
@@ -3603,7 +3603,7 @@ h6 {
   /* Main Menu Area css
   ============================================================================================ */
   .header_area .navbar .nav .nav-item {
-    margin-right: 28px;
+    margin-right: 20px;
   }
 
   /* End Main Menu Area css
