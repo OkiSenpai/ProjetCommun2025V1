@@ -211,139 +211,119 @@
     <!--================ End Banner Area =================-->
 
     <!--================Contact Area =================-->
-    <section class="contact_area section_gap">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="contact_info">
-              <div class="info_item">
-                <i class="lnr lnr-home"></i>
-                <h6>Belgique/ Bruxelles</h6>
-                <p>Chaussée de Waterloo, 255 (2e étage) - 1060 Saint-Gilles</p>
-              </div>
-              <div class="info_item">
-                <i class="lnr lnr-phone-handset"></i>
-                <h6><a href="#">02/542.63.21 ou 0476/68.07.93 </a></h6>
-                <p>
-                  Accueil général tous les jours de 8h30h à 12h00 et de 13h00 à
-                  16h00. (aussi via WhatsApp)
-                </p>
-              </div>
-              <div class="info_item">
-                <i class="lnr lnr-envelope"></i>
-                <h6><a href="#">contact@mlsg.be</a></h6>
-                <p>Envoyer nous un email</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-9">
-            <form
-              class="row contact_form"
-              action="contact_process.php"
-              method="post"
-              id="contactForm"
-              novalidate="novalidate"
-            >
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Entrez votre nom"
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Entrez votre adresse e-mail"
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subject"
-                    name="subject"
-                    placeholder="Entrez l'objet"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    id="message"
-                    rows="1"
-                    placeholder="Entrez votre message"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="col-md-12 text-right">
-                <button type="submit" value="submit" class="primary_btn">
-                  <span>Envoyer le message</span>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- OpenStreetMap (Leaflet) Map -->
-        <div
-          id="mapBox"
-          style="height: 400px; width: 100%; margin-top: 30px"
-        ></div>
-      </div>
-    </section>
+	<section class="contact_area section_gap">
+		<div class="main_title mt-5">
+			<h2>Contact</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="contact_info">
+						<div class="info_item">
+							<i class="lnr lnr-home"></i>
+							<h6>Bruxelles, Belgique</h6>
+							<p>Chau. de Waterloo 255, 1060 Saint-Gilles</p>
+						</div>
+						<div class="info_item">
+							<i class="lnr lnr-phone-handset"></i>
+							<h6><a href="#">02 542 63 21</a></h6>
+							<p>08:30-12:00 / 13:00-16:00</p>
+						</div>
+						<div class="info_item">
+							<i class="lnr lnr-envelope"></i>
+							<h6><a href="#">info@mlsg.be</a></h6>
+							<p>Envoyez-nous votre demande quand vous le souhaitez !</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
+						novalidate="novalidate">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name"
+									placeholder="Entrez votre prénom">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="firstName" name="firstName"
+									placeholder="Entrez votre nom">
+							</div>
+
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" name="email"
+									placeholder="Entrez votre mail">
+							</div>
+							<div class="form-group">
+								<input type="number" class="form-control" id="postCode" name="postCode"
+									placeholder="Entrez votre code postal">
+							</div>
+							<div class="form-group">
+								<input type="number" class="form-control" id="phone" name="phone"
+									placeholder="Entrez votre téléphone">
+							</div>
+						</div>
+
+						<div class="col-md-6 text-right d-flex justify-content-center align-items-center">
+							<button type="submit" value="submit" class="primary_btn">
+								<span>Envoyez</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</section>
     <!--================Contact Area =================-->
 
     <!--================Footer Area =================-->
-    <footer class="footer_area">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="footer_top flex-column">
-              <div class="footer_logo">
-                <a href="#">
-                  <img src="img/logo.png" alt="" />
-                </a>
-                <h4>Suivez-nous</h4>
-              </div>
-              <div class="footer_social">
-                <a
-                  href="https://www.facebook.com/missionlocaledesaintgilles?fref=ts#"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-                <a
-                  href="https://www.youtube.com/channel/UC-_2jO4Bw7PqM5k00sGFdgA"
-                  ><i class="fa fa-youtube"></i
-                ></a>
-                <a href="https://www.instagram.com/missionlocaledesaintgilles/"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row footer_bottom justify-content-center">
-          <p class="col-lg-8 col-sm-12 footer-text">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            Tous droits réservés | Ce modèle est réalisé avec
-            <i class="fa fa-heart-o" aria-hidden="true"></i> par
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
-        </div>
-      </div>
-    </footer>
+	<footer class="footer_area border border-top border-dark">
+		<div class="container py-4">
+
+			<!-- Ligne du haut : Réseaux à gauche, carte à droite -->
+			<div class="row mb-5">
+
+				<!-- Bloc "Suivez-nous" à gauche -->
+				<div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+					<div class="footer_logo mb-3">
+						<a href="#"><img src="img/logo.png" alt="logo" style="max-width: 100px;"></a>
+						<h4>Suivez-nous</h4>
+					</div>
+					<div class="footer_social mb-2">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</div>
+					<div class="contact_info">
+						<p>Téléphone : 0000000000</p>
+						<p>Email : Mail@mail.com</p>
+					</div>
+				</div>
+
+				<!-- Carte à droite alignée avec le haut du bloc gauche -->
+				<div class="col-md-6 d-flex justify-content-center align-items-center ">
+					<div id="mapBox" class="mapBox mb-5" data-lat="50.823850" data-lon="4.345610" data-zoom="15"
+						data-info="Chau. de Waterloo 255, 1060 Saint-Gilles, Belgique" data-mlat="50.823850"
+						data-mlon="4.345610" style="width: 100%; max-width: 450px; height: 350px;">
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Ligne du bas : Copyright -->
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p class="footer-text m-0">
+						&copy;
+						<script>document.write(new Date().getFullYear());</script> Tous droits réservés |
+						Cette template a été créée par
+						<a href="https://colorlib.com" target="_blank">Agim, Massine & Omer</a>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
     <!--================End Footer Area =================-->
 
     <!-- Optional JavaScript -->
