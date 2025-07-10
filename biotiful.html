@@ -16,27 +16,24 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/header.css">
-		<style>
-	  .animate-pulse {
-	    animation: pulse 2.5s infinite alternate cubic-bezier(.4,0,.6,1);
-	  }
-	  @keyframes pulse {
-	    0% { transform: scale(1);}
-	    100% { transform: scale(1.06);}
-	  }
-	  .gallery-img-hover img {
-	    transition: transform .5s cubic-bezier(.4,2,.6,1), box-shadow .3s;
-	  }
-	  .gallery-img-hover:hover img {
-	    transform: scale(1.08) rotate(-2deg);
-	    box-shadow: 0 8px 32px #8db59633;
-	  }
-	  .fadein-left, .fadein-right, .fadein-up { opacity:0; }
+	<style>
+		body {
+			cursor: none;
+		}
+
+
+		.gallery-img-hover img {
+			transition: transform .5s cubic-bezier(.4, 2, .6, 1), box-shadow .3s;
+		}
+
+		.gallery-img-hover:hover img {
+			transform: scale(1.08) rotate(-2deg);
+			box-shadow: 0 8px 32px #8db59633;
+		}
 	</style>
 </head>
 
-<body >
+<body>
 
 	<!--================ Header Area =================-->
 	<header class="header_area">
@@ -111,50 +108,61 @@
 	<!--================ End Header Area =================-->
 
 	<!-- Animirana pčela -->
-	<div id="bee" style="position:fixed; z-index:1000; width:60px; height:60px; left:10vw; top:20vh; pointer-events:none;">
-	  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f41d.png" alt="bee" style="width:100%;height:100%;">
+	<div id="bee"
+		style="position:fixed; z-index:1000; width:60px; height:60px; left:10vw; top:20vh; pointer-events:none;">
+		<img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f41d.png" alt="bee"
+			style="width:100%;height:100%;">
 	</div>
+	<!-- Fleurs -->
+
+
 
 	<!-- Hero sekcija -->
-	
-	  <div class="row align-items-center" style="height: 100vh;">
-	    <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-	      <h1 class="display-3 fw-bold mb-3" id="biotiful-title" style="color:#8db596; letter-spacing:2px;">
-	        <span class="d-inline-block animate-pulse">Biotiful</span>
-	      </h1>
-	      <p class="lead mb-4" style="color:#bfa76f;">bla bla bla </p>
 
-	    </div>
-	    <div class="col-lg-6 text-center">
-	      <img src="https://images.unsplash.com/photo-1526397751294-331021109fbd?auto=format&fit=crop&w=600&q=80" alt="Nature" class="img-fluid rounded-4 shadow-lg hero-img" style="max-height:350px; border:6px solid #e8f5e9;">
-	    </div>
-	  </div>
-	
+	<div class="row align-items-center" style="height: 100vh;">
+		<div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+			<h1 class="display-3 fw-bold mb-3" id="biotiful-title" style="color:#8db596; letter-spacing:2px;">
+				<span class="d-inline-block animate-pulse">Biotiful</span>
+			</h1>
+			<p class="lead mb-4" style="color:#bfa76f;">bla bla bla </p>
+
+		</div>
+		<div class="col-lg-6 text-center">
+			<img src="https://images.unsplash.com/photo-1526397751294-331021109fbd?auto=format&fit=crop&w=600&q=80"
+				alt="Nature" class="img-fluid rounded-4 shadow-lg hero-img"
+				style="max-height:350px; border:6px solid #e8f5e9;">
+		</div>
+	</div>
+
 
 	<!-- Dekorativni cvetovi -->
 	<div class="position-absolute" style="top:8%; left:2%; width:80px; opacity:.5; z-index:1;">
-	  <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="flower" style="width:100%;">
+		<img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="flower" style="width:100%;">
 	</div>
 	<div class="position-absolute" style="top:20%; right:3%; width:60px; opacity:.4; z-index:1;">
-	  <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="flower" style="width:100%;">
+		<img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="flower" style="width:100%;">
 	</div>
 
 	<!-- O nama -->
 	<section id="about" class="container py-5">
-	  <div class="row align-items-center">
-	    <div class="col-md-6 mb-4 mb-md-0 fadein-left">
-	      <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?auto=format&fit=crop&w=600&q=80" alt="about" class="img-fluid rounded-4 shadow gallery-img" style="border:4px solid #bfa76f;">
-	    </div>
-	    <div class="col-md-6 fadein-right">
-	      <h2 class="fw-bold mb-3" style="color:#8db596;">O nama</h2>
-	      <p class="mb-3">Biotiful je nastao iz ljubavi prema prirodi i pčelama. Naša misija je da spojimo lepotu, zdravlje i održivost kroz proizvode inspirisane prirodom.</p>
-	      <ul class="list-unstyled">
-	        <li class="mb-2"><i class="fa fa-leaf me-2" style="color:#8db596;"></i>100% prirodni sastojci</li>
-	        <li class="mb-2"><i class="fa fa-recycle me-2" style="color:#bfa76f;"></i>Održivost i ekološka ambalaža</li>
-	        <li class="mb-2"><i class="fa fa-heart me-2" style="color:#e6b800;"></i>Ručno pravljeno sa ljubavlju</li>
-	      </ul>
-	    </div>
-	  </div>
+		<div class="row align-items-center">
+			<div class="col-md-6 mb-4 mb-md-0 fadein-left">
+				<img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?auto=format&fit=crop&w=600&q=80"
+					alt="about" class="img-fluid rounded-4 shadow gallery-img" style="border:4px solid #bfa76f;">
+			</div>
+			<div class="col-md-6 fadein-right">
+				<h2 class="fw-bold mb-3" style="color:#8db596;">O nama</h2>
+				<p class="mb-3">Biotiful je nastao iz ljubavi prema prirodi i pčelama. Naša misija je da spojimo lepotu,
+					zdravlje i održivost kroz proizvode inspirisane prirodom.</p>
+				<ul class="list-unstyled">
+					<li class="mb-2"><i class="fa fa-leaf me-2" style="color:#8db596;"></i>100% prirodni sastojci</li>
+					<li class="mb-2"><i class="fa fa-recycle me-2" style="color:#bfa76f;"></i>Održivost i ekološka
+						ambalaža</li>
+					<li class="mb-2"><i class="fa fa-heart me-2" style="color:#e6b800;"></i>Ručno pravljeno sa ljubavlju
+					</li>
+				</ul>
+			</div>
+		</div>
 	</section>
 
 	<!-- Prelaz -->
@@ -162,106 +170,70 @@
 
 	<!-- Naša misija -->
 	<section id="mission" class="container py-5">
-	  <div class="row align-items-center">
-	    <div class="col-md-6 order-2 order-md-1 fadein-left">
-	      <h2 class="fw-bold mb-3" style="color:#bfa76f;">Naša misija</h2>
-	      <p class="mb-3">Verujemo u proizvode koji su dobri za ljude i planetu. Deo svake kupovine ide za zaštitu pčela i edukaciju o očuvanju prirode.</p>
-	      <ul class="list-unstyled">
-	        <li class="mb-2"><i class="fa fa-seedling me-2" style="color:#8db596;"></i>Podrška lokalnim pčelarima</li>
-	        <li class="mb-2"><i class="fa fa-hand-holding-heart me-2" style="color:#bfa76f;"></i>Prirodni, netoksični sastojci</li>
-	        <li class="mb-2"><i class="fa fa-globe-europe me-2" style="color:#e6b800;"></i>Zaštita biodiverziteta</li>
-	      </ul>
-	    </div>
-	    <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-center fadein-right">
-	      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="mission" class="img-fluid rounded-4 shadow gallery-img" style="border:4px solid #8db596;">
-	    </div>
-	  </div>
+		<div class="row align-items-center">
+			<div class="col-md-6 order-2 order-md-1 fadein-left">
+				<h2 class="fw-bold mb-3" style="color:#bfa76f;">Naša misija</h2>
+				<p class="mb-3">Verujemo u proizvode koji su dobri za ljude i planetu. Deo svake kupovine ide za zaštitu
+					pčela i edukaciju o očuvanju prirode.</p>
+				<ul class="list-unstyled">
+					<li class="mb-2"><i class="fa fa-seedling me-2" style="color:#8db596;"></i>Podrška lokalnim
+						pčelarima</li>
+					<li class="mb-2"><i class="fa fa-hand-holding-heart me-2" style="color:#bfa76f;"></i>Prirodni,
+						netoksični sastojci</li>
+					<li class="mb-2"><i class="fa fa-globe-europe me-2" style="color:#e6b800;"></i>Zaštita
+						biodiverziteta</li>
+				</ul>
+			</div>
+			<div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-center fadein-right">
+				<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+					alt="mission" class="img-fluid rounded-4 shadow gallery-img" style="border:4px solid #8db596;">
+			</div>
+		</div>
 	</section>
 
 	<!-- Galerija -->
 	<section id="gallery" class="container py-5">
-	  <h2 class="fw-bold text-center mb-5" style="color:#8db596;">Galerie</h2>
-	  <div class="row g-4">
-	    <div class="col-6 col-md-4 fadein-up">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Bee on flower">
-	      </div>
-	    </div>
-	    <div class="col-6 col-md-4 fadein-up" style="transition-delay:.1s">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1595475207225-428b62bda831?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Honey jars">
-	      </div>
-	    </div>
-	    <div class="col-6 col-md-4 fadein-up" style="transition-delay:.2s">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1604176354204-873a7877b708?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Skincare products">
-	      </div>
-	    </div>
-	    <div class="col-6 col-md-4 fadein-up" style="transition-delay:.3s">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1583947581924-860bda6a26df?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Workshop">
-	      </div>
-	    </div>
-	    <div class="col-6 col-md-4 fadein-up" style="transition-delay:.4s">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1529310399831-ed472b81d589?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Farm">
-	      </div>
-	    </div>
-	    <div class="col-6 col-md-4 fadein-up" style="transition-delay:.5s">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1550583720-4fb01a4398ae?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Beehives">
-	      </div>
-	    </div>
-	  </div>
+		<h2 class="fw-bold text-center mb-5" style="color:#8db596;">Galerie</h2>
+		<div class="row g-4">
+			<div class="col-6 col-md-4 fadein-up">
+				<div class="rounded-4 overflow-hidden shadow gallery-img-hover">
+					<img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=400&q=80"
+						class="img-fluid" alt="Bee on flower">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 fadein-up" style="transition-delay:.1s">
+				<div class="rounded-4 overflow-hidden shadow gallery-img-hover">
+					<img src="https://images.unsplash.com/photo-1595475207225-428b62bda831?auto=format&fit=crop&w=400&q=80"
+						class="img-fluid" alt="Honey jars">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 fadein-up" style="transition-delay:.2s">
+				<div class="rounded-4 overflow-hidden shadow gallery-img-hover">
+					<img src="https://images.unsplash.com/photo-1604176354204-873a7877b708?auto=format&fit=crop&w=400&q=80"
+						class="img-fluid" alt="Skincare products">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 fadein-up" style="transition-delay:.3s">
+				<div class="rounded-4 overflow-hidden shadow gallery-img-hover">
+					<img src="https://images.unsplash.com/photo-1583947581924-860bda6a26df?auto=format&fit=crop&w=400&q=80"
+						class="img-fluid" alt="Workshop">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 fadein-up" style="transition-delay:.4s">
+				<div class="rounded-4 overflow-hidden shadow gallery-img-hover">
+					<img src="https://images.unsplash.com/photo-1529310399831-ed472b81d589?auto=format&fit=crop&w=400&q=80"
+						class="img-fluid" alt="Farm">
+				</div>
+			</div>
+			<div class="col-6 col-md-4 fadein-up" style="transition-delay:.5s">
+				<div class="rounded-4 overflow-hidden shadow gallery-img-hover">
+					<img src="https://images.unsplash.com/photo-1550583720-4fb01a4398ae?auto=format&fit=crop&w=400&q=80"
+						class="img-fluid" alt="Beehives">
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<!-- Kontakt sekcija (ostavi tvoj kontakt i footer ispod ovoga) -->
-
-
-	<script>
-	$(function(){
-	  // Animacija pčele
-	  function animateBee() {
-	    var $bee = $('#bee');
-	    var ww = $(window).width()-80, wh = $(window).height()-80;
-	    var nx = Math.random()*ww, ny = Math.random()*wh;
-	    $bee.animate({left:nx, top:ny}, 3500+Math.random()*2000, 'swing', animateBee);
-	  }
-	  animateBee();
-
-	  // Fade in animacije na scroll
-	  function revealOnScroll() {
-	    $('.fadein-left, .fadein-right, .fadein-up').each(function(){
-	      var elTop = $(this).offset().top;
-	      var winBot = $(window).scrollTop() + $(window).height();
-	      if(elTop < winBot-40) {
-	        $(this).addClass('show');
-	      }
-	    });
-	  }
-	  $(window).on('scroll load', revealOnScroll);
-	  revealOnScroll();
-
-	  // Hover dugmadi
-	  $('.btn, .primary_btn').hover(
-	    function() { $(this).css({'transform':'scale(1.06)','box-shadow':'0 8px 24px #bfa76f33'}); },
-	    function() { $(this).css({'transform':'','box-shadow':''}); }
-	  );
-	  // Hover slike
-	  $('.gallery-img-hover').hover(
-	    function() { $(this).find('img').css({'transform':'scale(1.08) rotate(-2deg)','box-shadow':'0 8px 32px #8db59633'}); },
-	    function() { $(this).find('img').css({'transform':'','box-shadow':''}); }
-	  );
-	});
-	</script>
-	<style>
-	  .fadein-left.show { opacity:1; transform:translateX(0); transition:.8s cubic-bezier(.4,2,.6,1);}
-	  .fadein-left { transform:translateX(-60px);}
-	  .fadein-right.show { opacity:1; transform:translateX(0); transition:.8s cubic-bezier(.4,2,.6,1);}
-	  .fadein-right { transform:translateX(60px);}
-	  .fadein-up.show { opacity:1; transform:translateY(0); transition:.8s cubic-bezier(.4,2,.6,1);}
-	  .fadein-up { transform:translateY(60px);}
-	</style>
 
 	<!-- Kontakt sekcija i footer ostaju tvoj originalni kod ispod ovoga -->
 
@@ -402,6 +374,8 @@
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/bee.js"></script>
+
 
 </body>
 

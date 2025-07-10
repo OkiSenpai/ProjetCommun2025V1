@@ -4302,32 +4302,46 @@ h6 {
   transform: rotateX(0deg);
 }
 
-
-
-
 .snake-box {
   opacity: 0;
   position: relative;
   border-radius: 60px;
   transform: rotate(0deg);
   animation: snakeWave 1.4s infinite ease-in-out;
-  transition:
-    all 1.4s ease-out;
+  transition: all 1.4s ease-out;
 }
 
 /* Directions de départ */
-.snake-box.left   { left: -120vw; }
-.snake-box.right  { left: 120vw; }
-.snake-box.top    { top: -100vh; }
-.snake-box.bottom { top: 100vh; }
+.snake-box.left {
+  left: -120vw;
+}
+.snake-box.right {
+  left: 120vw;
+}
+.snake-box.top {
+  top: -100vh;
+}
+.snake-box.bottom {
+  top: 100vh;
+}
 
 /* Animations serpent */
 @keyframes snakeWave {
-  0%   { transform: rotate(3deg); }
-  25%  { transform: rotate(-3deg); }
-  50%  { transform: rotate(2deg); }
-  75%  { transform: rotate(-2deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(3deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* Position finale */
@@ -4337,4 +4351,30 @@ h6 {
   opacity: 1;
   border-radius: 12px;
   animation: none;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.card-img-top {
+  min-height: 210px;
+}
+.cardContainer {
+  margin-bottom: 25px;
+  transition: transform 0.3s cubic-bezier(.4, 2, .6, 1), box-shadow 0.3s;
+}
+.cardContainer:hover {
+  transform: scale(1.06) translateY(-8px) rotateZ(-1deg);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+.cardContainer:hover .card-img-top {
+  transform: rotateZ(6deg) scale(1.04);
+  transition: transform 0.4s cubic-bezier(.4, 2, .6, 1);
+}
+.card-img-top {
+  transition: transform 0.4s cubic-bezier(.4, 2, .6, 1);
 }

@@ -19,31 +19,7 @@
 	<link rel="stylesheet" href="css/header.css">
 
 	<style>
-		.card-body{
-			    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-		}
-		.card-img-top{
-			min-height: 210px;
-		}
-.cardContainer{
-	margin-bottom: 25px;
-	transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
-}
-.cardContainer:hover {
-    transform: scale(1.06) translateY(-8px) rotateZ(-1deg);
-    box-shadow: 0 12px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.12);
-    z-index: 2;
-}
-.cardContainer:hover .card-img-top {
-    transform: rotateZ(6deg) scale(1.04);
-    transition: transform 0.4s cubic-bezier(.4,2,.6,1);
-}
-.card-img-top {
-    transition: transform 0.4s cubic-bezier(.4,2,.6,1);
-}
+
 	</style>
 </head>
 
@@ -95,7 +71,8 @@
 								<a href="accompagnement.html" class="nav-link dropdown-toggle" data-toggle="dropdown"
 									role="button" aria-haspopup="true" aria-expanded="false">Accompagnement</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="accompagnement_individuel.html">1. Accompagnement
+									<li class="nav-item"><a class="nav-link" href="accompagnement_individuel.html">1.
+											Accompagnement
 											individuel</a></li>
 									<li class="nav-item"><a class="nav-link" href="accompagnement_social.html">2.
 											Accompagnement social
@@ -134,121 +111,134 @@
 		</div>
 	</section>
 	<section>
-		 <div class="container py-5">
-        <h1 class="text-center mb-5">Offres d'emploi</h1>
-        
-        <div class="row g-4">
-          
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer ">
-                <div class="card job-card h-100">
-                    <img src="./img/jobs/programer-working-his-desk-office.jpg" class="card-img-top" alt="Développeur Web">
-                    <div class="card-body cardBody">
-                        <h5 class="card-title">Développeur Web</h5>
-                        <p class="card-text"><strong>Salaire:</strong> 45 000€ - 55 000€</p>
-						 <p class="card-text"><strong>Date:</strong> 12/06/2023</p>
-                        <p class="card-text"><strong>Description:</strong> Nous recherchons un développeur web expérimenté pour rejoindre notre équipe...</p>
-                        <a href="#" class="btn btn-primary mt-3">Voir les détails</a>
-                    </div>
-                </div>
-            </div>
-            
-        
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
-                <div class="card job-card h-100">
-                    <img src="./img/jobs/offering-good-wine.jpg" class="card-img-top" alt="Designer UI/UX">
-                    <div class="card-body">
-                        <h5 class="card-title">Serveur</h5>
-                        <p class="card-text"><strong>Salaire:</strong> 14,37 € par heure</p>
-                        <p class="card-text"><strong>Date:</strong> 12/06/2023</p>
-                        <p class="card-text"><strong>Description:</strong> Poste pour un designer créatif avec expérience en conception d'interfaces...</p>
-                        <a href="#" class="btn btn-primary mt-3">Voir les détails</a>
-                    </div>
-                </div>
-            </div>
-            
- 
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
-                <div class="card job-card h-100">
-                    <img src="./img/jobs/young-smiling-woman-making-bruschetta-with-healthy-ingredients-while-preparing-food-kitchen.jpg" class="card-img-top" alt="Chef de Projet IT">
-                    <div class="card-body">
-                        <h5 class="card-title">Cuisinier</h5>
-                        <p class="card-text"><strong>Salaire:</strong> 55 000€ - 65 000€</p>
-                        <p class="card-text"><strong>Date:</strong> 10/06/2023</p>
-                        <p class="card-text"><strong>Description:</strong> Gestion de projets informatiques complexes avec une équipe pluridisciplinaire...</p>
-                        <a href="#" class="btn btn-primary mt-3">Voir les détails</a>
-                    </div>
-                </div>
-            </div>
-            
- 
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
-                <div class="card job-card h-100">
-                    <img src="./img/jobs/representations-user-experience-interface-design.jpg" class="card-img-top" alt="Data Scientist">
-                    <div class="card-body">
-                        <h5 class="card-title">Développeur Mobile</h5>
-                        <p class="card-text"><strong>Salaire:</strong> 50 000€ - 60 000€</p>
-                        <p class="card-text"><strong>Date:</strong> 08/06/2023</p>
-                        <p class="card-text"><strong>Description:</strong> Analyse de données complexes et développement de modèles prédictifs...</p>
-                        <a href="#" class="btn btn-primary mt-3">Voir les détails</a>
-                    </div>
-                </div>
-            </div>
-            
+		<div class="container py-5">
 
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
-                <div class="card job-card h-100">
-                    <img src="./img/jobs/person-front-computer-working-html.jpg" class="card-img-top" alt="DevOps Engineer">
-                    <div class="card-body">
-                        <h5 class="card-title">Ingénieur Logiciel</h5>
-                        <p class="card-text"><strong>Salaire:</strong> 50 000€ - 65 000€</p>
-                        <p class="card-text"><strong>Date:</strong> 05/06/2023</p>
-                        <p class="card-text"><strong>Description:</strong> Automatisation des processus de déploiement et gestion de l'infrastructure cloud...</p>
-                        <a href="#" class="btn btn-primary mt-3">Voir les détails</a>
-                    </div>
-                </div>
-            </div>
+			<div class="row g-4">
 
-            <div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
-                <div class="card job-card h-100">
-                    <img src="./img/jobs/stylish-brutal-bartender-shirt-apron-makes-cocktail-bar-counter-background.jpg" class="card-img-top" alt="Marketing Digital">
-                    <div class="card-body">
-                        <h5 class="card-title">Barman</h5>
-                        <p class="card-text"><strong>Salaire:</strong> 35 000€ - 45 000€</p>
-                        <p class="card-text"><strong>Date:</strong> 03/06/2023</p>
-                        <p class="card-text"><strong>Description:</strong> Stratégie de marketing digital et gestion des campagnes publicitaires en ligne...</p>
-                        <a href="#" class="btn btn-primary mt-3">Voir les détails</a>
-                    </div>
-                </div>
-            </div>
-			  <div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
-                <div class="card job-card h-100">
-                    <img src="./img/jobs/high-angle-chef-cooking.jpg" class="card-img-top" alt="Marketing Digital">
-                    <div class="card-body">
-                        <h5 class="card-title">Chef de Cuisine</h5>
-                        <p class="card-text"><strong>Salaire:</strong> 35 000€ - 45 000€</p>
-                        <p class="card-text"><strong>Date:</strong> 03/06/2023</p>
-                        <p class="card-text"><strong>Description:</strong> Stratégie de marketing digital et gestion des campagnes publicitaires en ligne...</p>
-                        <a href="#" class="btn btn-primary mt-3">Voir les détails</a>
-                    </div>
-                </div>
-            </div>
-			 <div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
-                <div class="card job-card h-100">
-                    <img src="./img/jobs/office-workers-using-finance-graphs.jpg" class="card-img-top" alt="Marketing Digital">
-                    <div class="card-body">
-                        <h5 class="card-title">Analyste de Données</h5>
-                        <p class="card-text"><strong>Salaire:</strong> 35 000€ - 45 000€</p>
-                        <p class="card-text"><strong>Date:</strong> 03/06/2023</p>
-                        <p class="card-text"><strong>Description:</strong> Stratégie de marketing digital et gestion des campagnes publicitaires en ligne...</p>
-                        <a href="#" class="btn btn-primary mt-3">Voir les détails</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer ">
+					<div class="card job-card h-100">
+						<img src="./img/jobs/programer-working-his-desk-office.jpg" class="card-img-top"
+							alt="Développeur Web">
+						<div class="card-body cardBody">
+							<h5 class="card-title">Développeur Web</h5>
+							<p class="card-text"><strong>Salaire:</strong> 45 000€ - 55 000€</p>
+							<p class="card-text"><strong>Date:</strong> 12/06/2023</p>
+							<p class="card-text"><strong>Description:</strong> Nous recherchons un développeur web
+								expérimenté pour rejoindre notre équipe...</p>
+							<a href="#" class="btn btn-primary mt-3">Voir les détails</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
+					<div class="card job-card h-100">
+						<img src="./img/jobs/offering-good-wine.jpg" class="card-img-top" alt="Designer UI/UX">
+						<div class="card-body">
+							<h5 class="card-title">Serveur</h5>
+							<p class="card-text"><strong>Salaire:</strong> 14,37 € par heure</p>
+							<p class="card-text"><strong>Date:</strong> 12/06/2023</p>
+							<p class="card-text"><strong>Description:</strong> Poste pour un designer créatif avec
+								expérience en conception d'interfaces...</p>
+							<a href="#" class="btn btn-primary mt-3">Voir les détails</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
+					<div class="card job-card h-100">
+						<img src="./img/jobs/young-smiling-woman-making-bruschetta-with-healthy-ingredients-while-preparing-food-kitchen.jpg"
+							class="card-img-top" alt="Chef de Projet IT">
+						<div class="card-body">
+							<h5 class="card-title">Cuisinier</h5>
+							<p class="card-text"><strong>Salaire:</strong> 55 000€ - 65 000€</p>
+							<p class="card-text"><strong>Date:</strong> 10/06/2023</p>
+							<p class="card-text"><strong>Description:</strong> Gestion de projets informatiques
+								complexes avec une équipe pluridisciplinaire...</p>
+							<a href="#" class="btn btn-primary mt-3">Voir les détails</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
+					<div class="card job-card h-100">
+						<img src="./img/jobs/representations-user-experience-interface-design.jpg" class="card-img-top"
+							alt="Data Scientist">
+						<div class="card-body">
+							<h5 class="card-title">Développeur Mobile</h5>
+							<p class="card-text"><strong>Salaire:</strong> 50 000€ - 60 000€</p>
+							<p class="card-text"><strong>Date:</strong> 08/06/2023</p>
+							<p class="card-text"><strong>Description:</strong> Analyse de données complexes et
+								développement de modèles prédictifs...</p>
+							<a href="#" class="btn btn-primary mt-3">Voir les détails</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
+					<div class="card job-card h-100">
+						<img src="./img/jobs/person-front-computer-working-html.jpg" class="card-img-top"
+							alt="DevOps Engineer">
+						<div class="card-body">
+							<h5 class="card-title">Ingénieur Logiciel</h5>
+							<p class="card-text"><strong>Salaire:</strong> 50 000€ - 65 000€</p>
+							<p class="card-text"><strong>Date:</strong> 05/06/2023</p>
+							<p class="card-text"><strong>Description:</strong> Automatisation des processus de
+								déploiement et gestion de l'infrastructure cloud...</p>
+							<a href="#" class="btn btn-primary mt-3">Voir les détails</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
+					<div class="card job-card h-100">
+						<img src="./img/jobs/stylish-brutal-bartender-shirt-apron-makes-cocktail-bar-counter-background.jpg"
+							class="card-img-top" alt="Marketing Digital">
+						<div class="card-body">
+							<h5 class="card-title">Barman</h5>
+							<p class="card-text"><strong>Salaire:</strong> 35 000€ - 45 000€</p>
+							<p class="card-text"><strong>Date:</strong> 03/06/2023</p>
+							<p class="card-text"><strong>Description:</strong> Stratégie de marketing digital et gestion
+								des campagnes publicitaires en ligne...</p>
+							<a href="#" class="btn btn-primary mt-3">Voir les détails</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
+					<div class="card job-card h-100">
+						<img src="./img/jobs/high-angle-chef-cooking.jpg" class="card-img-top" alt="Marketing Digital">
+						<div class="card-body">
+							<h5 class="card-title">Chef de Cuisine</h5>
+							<p class="card-text"><strong>Salaire:</strong> 35 000€ - 45 000€</p>
+							<p class="card-text"><strong>Date:</strong> 03/06/2023</p>
+							<p class="card-text"><strong>Description:</strong> Stratégie de marketing digital et gestion
+								des campagnes publicitaires en ligne...</p>
+							<a href="#" class="btn btn-primary mt-3">Voir les détails</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
+					<div class="card job-card h-100">
+						<img src="./img/jobs/office-workers-using-finance-graphs.jpg" class="card-img-top"
+							alt="Marketing Digital">
+						<div class="card-body">
+							<h5 class="card-title">Analyste de Données</h5>
+							<p class="card-text"><strong>Salaire:</strong> 35 000€ - 45 000€</p>
+							<p class="card-text"><strong>Date:</strong> 03/06/2023</p>
+							<p class="card-text"><strong>Description:</strong> Stratégie de marketing digital et gestion
+								des campagnes publicitaires en ligne...</p>
+							<a href="#" class="btn btn-primary mt-3">Voir les détails</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	
+
 
 
 	<!--================ Start Newsletter Area =================-->
@@ -349,53 +339,53 @@
 
 
 	<!--================Footer Area =================-->
-  <footer class="footer_area border border-top border-dark">
-    <div class="container py-4">
+	<footer class="footer_area border border-top border-dark">
+		<div class="container py-4">
 
-      <!-- Ligne du haut : Réseaux à gauche, carte à droite -->
-      <div class="row mb-5">
+			<!-- Ligne du haut : Réseaux à gauche, carte à droite -->
+			<div class="row mb-5">
 
-        <!-- Bloc "Suivez-nous" à gauche -->
-        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-          <div class="footer_logo mb-3">
-            <a href="#"><img src="img/logo.png" alt="logo" style="max-width: 100px;"></a>
-            <h4>Suivez-nous</h4>
-          </div>
-          <div class="footer_social mb-2">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-          </div>
-          <div class="contact_info">
-            <p>Téléphone : 02 542 63 21</p>
-            <p>Email : info@mlsg.be</p>
-          </div>
-        </div>
+				<!-- Bloc "Suivez-nous" à gauche -->
+				<div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+					<div class="footer_logo mb-3">
+						<a href="#"><img src="img/logo.png" alt="logo" style="max-width: 100px;"></a>
+						<h4>Suivez-nous</h4>
+					</div>
+					<div class="footer_social mb-2">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</div>
+					<div class="contact_info">
+						<p>Téléphone : 02 542 63 21</p>
+						<p>Email : info@mlsg.be</p>
+					</div>
+				</div>
 
-        <!-- Carte à droite alignée avec le haut du bloc gauche -->
-        <div class="col-md-6 d-flex justify-content-center align-items-center ">
-          <div id="mapBox" class="mapBox mb-5" data-lat="50.823850" data-lon="4.345610" data-zoom="15"
-            data-info="Chau. de Waterloo 255, 1060 Saint-Gilles, Belgique" data-mlat="50.823850" data-mlon="4.345610"
-            style="width: 100%; max-width: 450px; height: 350px;">
-          </div>
-        </div>
+				<!-- Carte à droite alignée avec le haut du bloc gauche -->
+				<div class="col-md-6 d-flex justify-content-center align-items-center ">
+					<div id="mapBox" class="mapBox mb-5" data-lat="50.823850" data-lon="4.345610" data-zoom="15"
+						data-info="Chau. de Waterloo 255, 1060 Saint-Gilles, Belgique" data-mlat="50.823850"
+						data-mlon="4.345610" style="width: 100%; max-width: 450px; height: 350px;">
+					</div>
+				</div>
 
-      </div>
+			</div>
 
-      <!-- Ligne du bas : Copyright -->
-      <div class="row mt-5">
-        <div class="col-12 text-center">
-          <p class="footer-text m-0">
-            &copy;
-            <script>document.write(new Date().getFullYear());</script> Tous droits réservés |
-            Cette template a été créée par
-            <a href="https://colorlib.com" target="_blank">Agim, Massine & Omer</a>
-          </p>
-        </div>
-      </div>
+			<!-- Ligne du bas : Copyright -->
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<p class="footer-text m-0">
+						&copy;
+						<script>document.write(new Date().getFullYear());</script> Tous droits réservés |
+						Cette template a été créée par
+						<a href="https://colorlib.com" target="_blank">Agim, Massine & Omer</a>
+					</p>
+				</div>
+			</div>
 
-    </div>
-  </footer>
+		</div>
+	</footer>
 
 
 	<!--================End Footer Area =================-->
@@ -421,7 +411,7 @@
 
 	<script>
 
-</script>
+	</script>
 </body>
 
 </html>
