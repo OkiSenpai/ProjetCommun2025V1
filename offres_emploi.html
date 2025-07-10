@@ -82,8 +82,7 @@
 								<a href="accompagnement.html" class="nav-link dropdown-toggle" data-toggle="dropdown"
 									role="button" aria-haspopup="true" aria-expanded="false">Accompagnement</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="accompagnement_individuel.html">1.
-											Accompagnement
+									<li class="nav-item"><a class="nav-link" href="accompagnement_individuel.html">1. Accompagnement
 											individuel</a></li>
 									<li class="nav-item"><a class="nav-link" href="accompagnement_social.html">2.
 											Accompagnement social
@@ -220,7 +219,7 @@
                     </div>
                 </div>
             </div>
-			 <div class="col-12 col-md-6 col-lg-4 col-xl-3 cardContainer">
+			 <div class="col-12 col-md-6 col-lg-4 col-xl-4 cardContainer">
                 <div class="card job-card h-100">
                     <img src="./img/jobs/office-workers-using-finance-graphs.jpg" class="card-img-top" alt="Marketing Digital">
                     <div class="card-body">
@@ -337,53 +336,53 @@
 
 
 	<!--================Footer Area =================-->
-	<footer class="footer_area border border-top border-dark">
-		<div class="container py-4">
+  <footer class="footer_area border border-top border-dark">
+    <div class="container py-4">
 
-			<!-- Ligne du haut : Réseaux à gauche, carte à droite -->
-			<div class="row mb-5">
+      <!-- Ligne du haut : Réseaux à gauche, carte à droite -->
+      <div class="row mb-5">
 
-				<!-- Bloc "Suivez-nous" à gauche -->
-				<div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-					<div class="footer_logo mb-3">
-						<a href="#"><img src="img/logo.png" alt="logo" style="max-width: 100px;"></a>
-						<h4>Suivez-nous</h4>
-					</div>
-					<div class="footer_social mb-2">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-					</div>
-					<div class="contact_info">
-						<p>Téléphone : 0000000000</p>
-						<p>Email : Mail@mail.com</p>
-					</div>
-				</div>
+        <!-- Bloc "Suivez-nous" à gauche -->
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="footer_logo mb-3">
+            <a href="#"><img src="img/logo.png" alt="logo" style="max-width: 100px;"></a>
+            <h4>Suivez-nous</h4>
+          </div>
+          <div class="footer_social mb-2">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <div class="contact_info">
+            <p>Téléphone : 02 542 63 21</p>
+            <p>Email : info@mlsg.be</p>
+          </div>
+        </div>
 
-				<!-- Carte à droite alignée avec le haut du bloc gauche -->
-				<div class="col-md-6 d-flex justify-content-center align-items-center ">
-					<div id="mapBox" class="mapBox mb-5" data-lat="50.823850" data-lon="4.345610" data-zoom="15"
-						data-info="Chau. de Waterloo 255, 1060 Saint-Gilles, Belgique" data-mlat="50.823850"
-						data-mlon="4.345610" style="width: 100%; max-width: 450px; height: 350px;">
-					</div>
-				</div>
+        <!-- Carte à droite alignée avec le haut du bloc gauche -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center ">
+          <div id="mapBox" class="mapBox mb-5" data-lat="50.823850" data-lon="4.345610" data-zoom="15"
+            data-info="Chau. de Waterloo 255, 1060 Saint-Gilles, Belgique" data-mlat="50.823850" data-mlon="4.345610"
+            style="width: 100%; max-width: 450px; height: 350px;">
+          </div>
+        </div>
 
-			</div>
+      </div>
 
-			<!-- Ligne du bas : Copyright -->
-			<div class="row mt-5">
-				<div class="col-12 text-center">
-					<p class="footer-text m-0">
-						&copy;
-						<script>document.write(new Date().getFullYear());</script> Tous droits réservés |
-						Cette template a été créée par
-						<a href="https://colorlib.com" target="_blank">Agim, Massine & Omer</a>
-					</p>
-				</div>
-			</div>
+      <!-- Ligne du bas : Copyright -->
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <p class="footer-text m-0">
+            &copy;
+            <script>document.write(new Date().getFullYear());</script> Tous droits réservés |
+            Cette template a été créée par
+            <a href="https://colorlib.com" target="_blank">Agim, Massine & Omer</a>
+          </p>
+        </div>
+      </div>
 
-		</div>
-	</footer>
+    </div>
+  </footer>
 
 
 	<!--================End Footer Area =================-->
@@ -406,14 +405,30 @@
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
 	<script src="js/main.js"></script>
+
 	<script>
-		     document.querySelectorAll('a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-               
+$(document).ready(function(){
+    $('.job-card').hover(
+        function() {
+            $(this).stop().animate({
+                marginTop: "-10px",
+                boxShadow: "0 8px 32px rgba(0,0,0,0.2)"
+            }, 200).css({
+                "box-shadow": "0 8px 32px rgba(0,0,0,0.2)",
+                "transform": "scale(1.03)"
             });
-        });
-	</script>
+        },
+        function() {
+            $(this).stop().animate({
+                marginTop: "0px"
+            }, 200).css({
+                "box-shadow": "",
+                "transform": "scale(1)"
+            });
+        }
+    );
+});
+</script>
 </body>
 
 </html>
