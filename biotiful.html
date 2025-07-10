@@ -1,44 +1,52 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Satner Portfolio</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/header.css">
-		<style>
-	  .animate-pulse {
-	    animation: pulse 2.5s infinite alternate cubic-bezier(.4,0,.6,1);
-	  }
-	  @keyframes pulse {
-	    0% { transform: scale(1);}
-	    100% { transform: scale(1.06);}
-	  }
-	  .gallery-img-hover img {
-	    transition: transform .5s cubic-bezier(.4,2,.6,1), box-shadow .3s;
-	  }
-	  .gallery-img-hover:hover img {
-	    transform: scale(1.08) rotate(-2deg);
-	    box-shadow: 0 8px 32px #8db59633;
-	  }
-	  .fadein-left, .fadein-right, .fadein-up { opacity:0; }
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biotiful - Présentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        .bg-forest {
+            background-color: #2e7d32;
+        }
+        
+        .bg-light-green {
+            background-color: #e8f5e9;
+        }
+        
+        .bg-white-green {
+            background-color: #f1f8e9;
+        }
+        
+        .btn-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .section-delay-1 { animation-delay: 0.2s; }
+        .section-delay-2 { animation-delay: 0.4s; }
+        .section-delay-3 { animation-delay: 0.6s; }
+        .section-delay-4 { animation-delay: 0.8s; }
+        .section-delay-5 { animation-delay: 1s; }
+    </style>
 </head>
-
-<body >
-
-	<!--================ Header Area =================-->
+<body class="font-sans">
+    <!-- Navigation -->
 	<header class="header_area">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">
@@ -84,8 +92,7 @@
 								<a href="accompagnement.html" class="nav-link dropdown-toggle" data-toggle="dropdown"
 									role="button" aria-haspopup="true" aria-expanded="false">Accompagnement</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="accompagnement_individuel.html">1.
-											Accompagnement
+									<li class="nav-item"><a class="nav-link" href="accompagnement_individuel.html">1. Accompagnement
 											individuel</a></li>
 									<li class="nav-item"><a class="nav-link" href="accompagnement_social.html">2.
 											Accompagnement social
@@ -108,301 +115,419 @@
 
 		</div>
 	</header>
-	<!--================ End Header Area =================-->
 
-	<!-- Animirana pčela -->
-	<div id="bee" style="position:fixed; z-index:1000; width:60px; height:60px; left:10vw; top:20vh; pointer-events:none;">
-	  <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f41d.png" alt="bee" style="width:100%;height:100%;">
-	</div>
+    <!-- Hero Section -->
+    <section class="bg-forest text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 fade-in">Biotiful</h1>
+            <p class="text-xl md:text-2xl mb-12 fade-in section-delay-1">Le projet d'économie sociale de la Mission Locale de Saint-Gilles</p>
+            <a href="#presentation" class="bg-white text-green-700 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block btn-hover fade-in section-delay-2">
+                En savoir plus
+            </a>
+        </div>
+    </section>
 
-	<!-- Hero sekcija -->
-	
-	  <div class="row align-items-center" style="height: 100vh;">
-	    <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-	      <h1 class="display-3 fw-bold mb-3" id="biotiful-title" style="color:#8db596; letter-spacing:2px;">
-	        <span class="d-inline-block animate-pulse">Biotiful</span>
-	      </h1>
-	      <p class="lead mb-4" style="color:#bfa76f;">bla bla bla </p>
+    <!-- Main Content Sections -->
+    <main>
+        <!-- Présentation Section -->
+        <section id="presentation" class="py-20 bg-light-green">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center fade-in section-delay-1">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Présentation" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Le projet Biotiful</h2>
+                        <p class="text-gray-600 mb-4">Agréé depuis fin 2019 et financé depuis 2020, notre projet d'économie sociale « Biotiful » entrait dans sa 2ème année d'activité.</p>
+                        <p class="text-gray-600 mb-4">Ce projet est né au départ d'une formation en maraîchage biologique dans le cadre de la « Garantie Jeunes » dont les financements étaient limités à 3 ans (2018-2020). Le « capital » ressources acquis en termes de terrains, de ressources humaines, de connaissances, de réseaux, ne pouvait être ainsi abandonné.</p>
+                        <div class="mt-8">
+                            <a href="#origines" class="text-green-600 font-semibold hover:text-green-800 transition duration-300 flex items-center">
+                                Découvrez nos origines
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	    </div>
-	    <div class="col-lg-6 text-center">
-	      <img src="https://images.unsplash.com/photo-1526397751294-331021109fbd?auto=format&fit=crop&w=600&q=80" alt="Nature" class="img-fluid rounded-4 shadow-lg hero-img" style="max-height:350px; border:6px solid #e8f5e9;">
-	    </div>
-	  </div>
-	
+        <!-- Origines Section -->
+        <section id="origines" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Nos Origines</h2>
+                    <div class="w-20 h-1 bg-green-500 mx-auto"></div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center fade-in section-delay-1">
+                    <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Origines</h3>
+                        <p class="text-gray-600 mb-4">L'idée d'une entreprise d'économie sociale est née sous l'impulsion de fonds régionaux (Bruxelles) et le soutien de la commune de Saint-Gilles.</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-gray-600">2015 : Création de l'association</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-gray-600">2017 : Premier grand projet de reboisement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-gray-600">2020 : Expansion à l'échelle nationale</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-inner">
+                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1406&q=80" alt="Origines" class="rounded-lg w-full">
+                            <div class="mt-4 text-center text-sm text-gray-500">Notre équipe fondatrice lors du premier projet communautaire</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	<!-- Dekorativni cvetovi -->
-	<div class="position-absolute" style="top:8%; left:2%; width:80px; opacity:.5; z-index:1;">
-	  <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="flower" style="width:100%;">
-	</div>
-	<div class="position-absolute" style="top:20%; right:3%; width:60px; opacity:.4; z-index:1;">
-	  <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="flower" style="width:100%;">
-	</div>
+        <!-- Challenges Section -->
+        <section id="challenges" class="py-20 bg-white-green">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Nos Challenges</h2>
+                    <div class="w-20 h-1 bg-green-500 mx-auto"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">Chaque jour, nous relevons des défis pour rendre notre action plus efficace et plus impactante.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 fade-in section-delay-1">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="text-green-500 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Les plus grands challenges du projet Biotiful</h3>
+                        <ul class="list-disc pl-5 text-gray-600">
+                            <li class="mb-2">Entretenir les réseaux de vente de légumes</li>
+                            <li class="mb-2">Recruter les travailleuses·eurs en contrat d'insertion</li>
+                            <li class="mb-2">Développer et diversifier l'activité</li>
+                            <li class="mb-2">Rechercher d'autres financements</li>
+                            <li>Rechercher des terrains cultivables</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="text-green-500 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Financement</h3>
+                        <p class="text-gray-600">Trouver des financements durables pour nos projets tout en restant indépendants est un équilibre délicat à maintenir.</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="text-green-500 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Innovation</h3>
+                        <p class="text-gray-600">Développer des solutions innovantes et accessibles pour répondre aux problèmes environnementaux locaux.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-center fade-in section-delay-2">
+                    <a href="#impacts" class="inline-block bg-green-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-green-600 transition duration-300 btn-hover">
+                        Voir nos impacts
+                    </a>
+                </div>
+            </div>
+        </section>
 
-	<!-- O nama -->
-	<section id="about" class="container py-5">
-	  <div class="row align-items-center">
-	    <div class="col-md-6 mb-4 mb-md-0 fadein-left">
-	      <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?auto=format&fit=crop&w=600&q=80" alt="about" class="img-fluid rounded-4 shadow gallery-img" style="border:4px solid #bfa76f;">
-	    </div>
-	    <div class="col-md-6 fadein-right">
-	      <h2 class="fw-bold mb-3" style="color:#8db596;">O nama</h2>
-	      <p class="mb-3">Biotiful je nastao iz ljubavi prema prirodi i pčelama. Naša misija je da spojimo lepotu, zdravlje i održivost kroz proizvode inspirisane prirodom.</p>
-	      <ul class="list-unstyled">
-	        <li class="mb-2"><i class="fa fa-leaf me-2" style="color:#8db596;"></i>100% prirodni sastojci</li>
-	        <li class="mb-2"><i class="fa fa-recycle me-2" style="color:#bfa76f;"></i>Održivost i ekološka ambalaža</li>
-	        <li class="mb-2"><i class="fa fa-heart me-2" style="color:#e6b800;"></i>Ručno pravljeno sa ljubavlju</li>
-	      </ul>
-	    </div>
-	  </div>
-	</section>
+        <!-- Impacts sociaux Section -->
+        <section id="impacts" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Impacts Sociaux</h2>
+                    <div class="w-20 h-1 bg-green-500 mx-auto"></div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center fade-in section-delay-1">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Impacts sociaux" class="rounded-lg shadow-lg w-full">
+                            <div class="absolute -bottom-6 -right-6 bg-green-500 text-white p-4 rounded-lg shadow-xl">
+                                <div class="text-3xl font-bold">12,000+</div>
+                                <div class="text-sm">Arbres plantés</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Pandemijski uticaj</h3>
+                        <p class="text-gray-600 mb-4">Comme tous les autres secteurs, l'entreprise a souffert de la crise sanitaire, cependant dans une moindre mesure, s'agissant de la culture de denrées alimentaires et d'un travail réalisé principalement en extérieur.</p>
+                        
+                        <div class="mt-8 space-y-6">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Éducation environnementale</h4>
+                                    <p class="mt-1 text-gray-600">Plus de 50 ateliers éducatifs organisés dans les écoles et entreprises.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Emplois créés</h4>
+                                    <p class="mt-1 text-gray-600">15 emplois permanents et 200 saisonniers dans le secteur vert.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Communautés impactées</h4>
+                                    <p class="mt-1 text-gray-600">20 communes partenaires dans nos différents projets écologiques.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	<!-- Prelaz -->
-	<div class="w-100" style="height:60px; background:linear-gradient(180deg,#e8f5e9 0,#f9f7f0 100%);"></div>
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto fade-in">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Contactez-nous</h2>
+                        <div class="w-20 h-1 bg-green-500 mx-auto"></div>
+                        <p class="text-gray-600 mt-4">Nous sommes toujours heureux d'échanger avec des personnes partageant nos valeurs.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden fade-in section-delay-1">
+                        <div class="md:flex">
+                            <div class="md:w-1/2 bg-green-500 text-white p-12">
+                                <h3 class="text-2xl font-bold mb-6">Informations de contact</h3>
+                                <div class="space-y-6">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                        </div>
+                                        <div class="ml-4">
+                                            <p class="text-lg font-medium">Adresse</p>
+                                            <p class="mt-1">123 Rue Verte, 75000 Paris</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                            </svg>
+                                        </div>
+                                        <div class="ml-4">
+                                            <p class="text-lg font-medium">Téléphone</p>
+                                            <p class="mt-1">+33 1 23 45 67 89</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                            </svg>
+                                        </div>
+                                        <div class="ml-4">
+                                            <p class="text-lg font-medium">Email</p>
+                                            <p class="mt-1">contact@biotiful.org</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-12">
+                                    <h4 class="text-xl font-bold mb-4">Suivez-nous</h4>
+                                    <div class="flex space-x-4">
+                                        <a href="#" class="bg-white text-green-500 rounded-full p-3 hover:bg-green-600 hover:text-white transition duration-300">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="bg-white text-green-500 rounded-full p-3 hover:bg-green-600 hover:text-white transition duration-300">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" class="bg-white text-green-500 rounded-full p-3 hover:bg-green-600 hover:text-white transition duration-300">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="#" class="bg-white text-green-500 rounded-full p-3 hover:bg-green-600 hover:text-white transition duration-300">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="md:w-1/2 p-12">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact</h3>
+                                <p class="text-gray-600 mb-6">Pour plus d'informations à propos de Biotiful :</p>
+                                <p class="text-gray-800 font-medium mb-6">Contacter Guillaume Goor (Coordinateur)</p>
+                                <form>
+                                    <div class="mb-6">
+                                        <label for="name" class="block text-gray-700 font-medium mb-2">Nom complet</label>
+                                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                                    </div>
+                                    
+                                    <div class="mb-6">
+                                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                                    </div>
+                                    
+                                    <div class="mb-6">
+                                        <label for="subject" class="block text-gray-700 font-medium mb-2">Sujet</label>
+                                        <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                                    </div>
+                                    
+                                    <div class="mb-6">
+                                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" required></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="w-full bg-green-500 text-white font-semibold py-3 px-4 rounded-lg hover:bg-green-600 transition duration-300 btn-hover">
+                                        Envoyer le message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-	<!-- Naša misija -->
-	<section id="mission" class="container py-5">
-	  <div class="row align-items-center">
-	    <div class="col-md-6 order-2 order-md-1 fadein-left">
-	      <h2 class="fw-bold mb-3" style="color:#bfa76f;">Naša misija</h2>
-	      <p class="mb-3">Verujemo u proizvode koji su dobri za ljude i planetu. Deo svake kupovine ide za zaštitu pčela i edukaciju o očuvanju prirode.</p>
-	      <ul class="list-unstyled">
-	        <li class="mb-2"><i class="fa fa-seedling me-2" style="color:#8db596;"></i>Podrška lokalnim pčelarima</li>
-	        <li class="mb-2"><i class="fa fa-hand-holding-heart me-2" style="color:#bfa76f;"></i>Prirodni, netoksični sastojci</li>
-	        <li class="mb-2"><i class="fa fa-globe-europe me-2" style="color:#e6b800;"></i>Zaštita biodiverziteta</li>
-	      </ul>
-	    </div>
-	    <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-center fadein-right">
-	      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="mission" class="img-fluid rounded-4 shadow gallery-img" style="border:4px solid #8db596;">
-	    </div>
-	  </div>
-	</section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Biotiful</h3>
+                    <p class="text-gray-400 max-w-xs">Engagés pour un futur plus vert et plus durable depuis 2015.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Accueil</a></li>
+                            <li><a href="#presentation" class="text-gray-400 hover:text-white transition duration-300">Présentation</a></li>
+                            <li><a href="#origines" class="text-gray-400 hover:text-white transition duration-300">Origines</a></li>
+                            <li><a href="#challenges" class="text-gray-400 hover:text-white transition duration-300">Challenges</a></li>
+                            <li><a href="#impacts" class="text-gray-400 hover:text-white transition duration-300">Impacts sociaux</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Légal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Mentions légales</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Politique de confidentialité</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Conditions d'utilisation</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400">123 Rue Verte, 75000 Paris</li>
+                            <li class="text-gray-400">contact@biotiful.org</li>
+                            <li class="text-gray-400">+33 1 23 45 67 89</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Biotiful. Tous droits réservés.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-	<!-- Galerija -->
-	<section id="gallery" class="container py-5">
-	  <h2 class="fw-bold text-center mb-5" style="color:#8db596;">Galerie</h2>
-	  <div class="row g-4">
-	    <div class="col-6 col-md-4 fadein-up">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Bee on flower">
-	      </div>
-	    </div>
-	    <div class="col-6 col-md-4 fadein-up" style="transition-delay:.1s">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1595475207225-428b62bda831?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Honey jars">
-	      </div>
-	    </div>
-	    <div class="col-6 col-md-4 fadein-up" style="transition-delay:.2s">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1604176354204-873a7877b708?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Skincare products">
-	      </div>
-	    </div>
-	    <div class="col-6 col-md-4 fadein-up" style="transition-delay:.3s">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1583947581924-860bda6a26df?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Workshop">
-	      </div>
-	    </div>
-	    <div class="col-6 col-md-4 fadein-up" style="transition-delay:.4s">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1529310399831-ed472b81d589?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Farm">
-	      </div>
-	    </div>
-	    <div class="col-6 col-md-4 fadein-up" style="transition-delay:.5s">
-	      <div class="rounded-4 overflow-hidden shadow gallery-img-hover">
-	        <img src="https://images.unsplash.com/photo-1550583720-4fb01a4398ae?auto=format&fit=crop&w=400&q=80" class="img-fluid" alt="Beehives">
-	      </div>
-	    </div>
-	  </div>
-	</section>
-
-	<!-- Kontakt sekcija (ostavi tvoj kontakt i footer ispod ovoga) -->
-
-
-	<script>
-	$(function(){
-	  // Animacija pčele
-	  function animateBee() {
-	    var $bee = $('#bee');
-	    var ww = $(window).width()-80, wh = $(window).height()-80;
-	    var nx = Math.random()*ww, ny = Math.random()*wh;
-	    $bee.animate({left:nx, top:ny}, 3500+Math.random()*2000, 'swing', animateBee);
-	  }
-	  animateBee();
-
-	  // Fade in animacije na scroll
-	  function revealOnScroll() {
-	    $('.fadein-left, .fadein-right, .fadein-up').each(function(){
-	      var elTop = $(this).offset().top;
-	      var winBot = $(window).scrollTop() + $(window).height();
-	      if(elTop < winBot-40) {
-	        $(this).addClass('show');
-	      }
-	    });
-	  }
-	  $(window).on('scroll load', revealOnScroll);
-	  revealOnScroll();
-
-	  // Hover dugmadi
-	  $('.btn, .primary_btn').hover(
-	    function() { $(this).css({'transform':'scale(1.06)','box-shadow':'0 8px 24px #bfa76f33'}); },
-	    function() { $(this).css({'transform':'','box-shadow':''}); }
-	  );
-	  // Hover slike
-	  $('.gallery-img-hover').hover(
-	    function() { $(this).find('img').css({'transform':'scale(1.08) rotate(-2deg)','box-shadow':'0 8px 32px #8db59633'}); },
-	    function() { $(this).find('img').css({'transform':'','box-shadow':''}); }
-	  );
-	});
-	</script>
-	<style>
-	  .fadein-left.show { opacity:1; transform:translateX(0); transition:.8s cubic-bezier(.4,2,.6,1);}
-	  .fadein-left { transform:translateX(-60px);}
-	  .fadein-right.show { opacity:1; transform:translateX(0); transition:.8s cubic-bezier(.4,2,.6,1);}
-	  .fadein-right { transform:translateX(60px);}
-	  .fadein-up.show { opacity:1; transform:translateY(0); transition:.8s cubic-bezier(.4,2,.6,1);}
-	  .fadein-up { transform:translateY(60px);}
-	</style>
-
-	<!-- Kontakt sekcija i footer ostaju tvoj originalni kod ispod ovoga -->
-
-	<!--================ Contact Area =================-->
-	<section class="contact_area section_gap">
-		<div class="main_title mt-5">
-			<h2>Contact</h2>
-		</div>
-		<div class="container snake-box right">
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="contact_info">
-						<div class="info_item">
-							<i class="lnr lnr-home"></i>
-							<h6>Bruxelles, Belgique</h6>
-							<p>Chau. de Waterloo 255, 1060 Saint-Gilles</p>
-						</div>
-						<div class="info_item">
-							<i class="lnr lnr-phone-handset"></i>
-							<h6><a href="#">02 542 63 21</a></h6>
-							<p>08:30-12:00 / 13:00-16:00</p>
-						</div>
-						<div class="info_item">
-							<i class="lnr lnr-envelope"></i>
-							<h6><a href="#">info@mlsg.be</a></h6>
-							<p>Envoyez-nous votre demande quand vous le souhaitez !</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-9">
-					<form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
-						novalidate="novalidate">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name"
-									placeholder="Entrez votre prénom">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="firstName" name="firstName"
-									placeholder="Entrez votre nom">
-							</div>
-
-							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="email"
-									placeholder="Entrez votre mail">
-							</div>
-							<div class="form-group">
-								<input type="number" class="form-control" id="postCode" name="postCode"
-									placeholder="Entrez votre code postal">
-							</div>
-							<div class="form-group">
-								<input type="number" class="form-control" id="phone" name="phone"
-									placeholder="Entrez votre téléphone">
-							</div>
-						</div>
-
-						<div class="col-md-6 text-right d-flex justify-content-center align-items-center">
-							<button type="submit" value="submit" class="primary_btn">
-								<span>Envoyez</span>
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-
-		</div>
-	</section>
-	<!--================ Contact Area =================-->
-
-
-	<!--================Footer Area =================-->
-	<footer class="footer_area border border-top border-dark">
-		<div class="container py-4">
-
-			<!-- Ligne du haut : Réseaux à gauche, carte à droite -->
-			<div class="row mb-5">
-
-				<!-- Bloc "Suivez-nous" à gauche -->
-				<div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
-					<div class="footer_logo mb-3">
-						<a href="#"><img src="img/logo.png" alt="logo" style="max-width: 100px;"></a>
-						<h4>Suivez-nous</h4>
-					</div>
-					<div class="footer_social mb-2">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-					</div>
-					<div class="contact_info">
-						<p>Téléphone : 0000000000</p>
-						<p>Email : Mail@mail.com</p>
-					</div>
-				</div>
-
-				<!-- Carte à droite alignée avec le haut du bloc gauche -->
-				<div class="col-md-6 d-flex justify-content-center align-items-center ">
-					<div id="mapBox" class="mapBox mb-5" data-lat="50.823850" data-lon="4.345610" data-zoom="15"
-						data-info="Chau. de Waterloo 255, 1060 Saint-Gilles, Belgique" data-mlat="50.823850"
-						data-mlon="4.345610" style="width: 100%; max-width: 450px; height: 350px;">
-					</div>
-				</div>
-
-			</div>
-
-			<!-- Ligne du bas : Copyright -->
-			<div class="row mt-5">
-				<div class="col-12 text-center">
-					<p class="footer-text m-0">
-						&copy;
-						<script>document.write(new Date().getFullYear());</script> Tous droits réservés |
-						Cette template a été créée par
-						<a href="https://colorlib.com" target="_blank">Agim, Massine & Omer</a>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-
-
-	<!--================End Footer Area =================-->
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
-	<script src="js/main.js"></script>
-
+    <script>
+        // Animation on scroll
+        $(document).ready(function() {
+            // Add fade-in class to elements when they come into view
+            $(window).scroll(function() {
+                $('.fade-in').each(function() {
+                    var position = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    
+                    if (scroll + windowHeight - 100 > position) {
+                        $(this).addClass('fade-in-active');
+                    }
+                });
+            });
+            
+            // Trigger scroll event on page load to animate elements already in view
+            $(window).trigger('scroll');
+            
+            // Smooth scrolling for anchor links
+            $('a[href*="#"]').on('click', function(e) {
+                e.preventDefault();
+                
+                $('html, body').animate(
+                    {
+                        scrollTop: $($(this).attr('href')).offset().top - 80,
+                    },
+                    500,
+                    'linear'
+                );
+            });
+            
+            // Mobile menu toggle
+            $('.mobile-menu-button').click(function() {
+                $('.mobile-menu').toggleClass('hidden');
+            });
+        });
+    </script>
 </body>
-
 </html>
